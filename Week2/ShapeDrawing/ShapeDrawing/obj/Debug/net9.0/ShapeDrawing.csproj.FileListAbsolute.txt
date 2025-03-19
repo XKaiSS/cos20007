@@ -1,0 +1,14 @@
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\obj\Debug\net9.0\ShapeDrawing.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\obj\Debug\net9.0\ShapeDrawing.AssemblyInfoInputs.cache
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\obj\Debug\net9.0\ShapeDrawing.AssemblyInfo.cs
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\obj\Debug\net9.0\ShapeDrawing.csproj.CoreCompileInputs.cache
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\bin\Debug\net9.0\ShapeDrawing.exe
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\bin\Debug\net9.0\ShapeDrawing.deps.json
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\bin\Debug\net9.0\ShapeDrawing.runtimeconfig.json
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\bin\Debug\net9.0\ShapeDrawing.dll
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\bin\Debug\net9.0\ShapeDrawing.pdb
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\obj\Debug\net9.0\ShapeDrawing.dll
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\obj\Debug\net9.0\refint\ShapeDrawing.dll
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\obj\Debug\net9.0\ShapeDrawing.pdb
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\obj\Debug\net9.0\ShapeDrawing.genruntimeconfig.cache
+c:\Users\aufb\Desktop\ShapeDrawing\ShapeDrawing\obj\Debug\net9.0\ref\ShapeDrawing.dll
