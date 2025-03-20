@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swin_Adventure", "Swin_Adve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{E5006823-1E5E-4433-A35A-ABACDC36234A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject2", "TestProject2\TestProject2.csproj", "{0D54E21C-E931-4B61-9983-5B3FF2574273}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{E5006823-1E5E-4433-A35A-ABACDC36234A}.Release|x64.Build.0 = Release|Any CPU
 		{E5006823-1E5E-4433-A35A-ABACDC36234A}.Release|x86.ActiveCfg = Release|Any CPU
 		{E5006823-1E5E-4433-A35A-ABACDC36234A}.Release|x86.Build.0 = Release|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Debug|x64.Build.0 = Debug|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Debug|x86.Build.0 = Debug|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Release|x64.ActiveCfg = Release|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Release|x64.Build.0 = Release|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Release|x86.ActiveCfg = Release|Any CPU
+		{0D54E21C-E931-4B61-9983-5B3FF2574273}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
