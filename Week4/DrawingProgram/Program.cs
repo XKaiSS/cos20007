@@ -2,45 +2,43 @@ using System;
 using SplashKitSDK;
 
 
-
 namespace ShapeDrawer
 {
-    public class Program
+   public class Program
+{
+    public static void Main()
     {
-        public static void Main()
+
+        string name = "XiKai"; // first name
+        int param = 123; // 1XX, XX is my last two digitals of student id
+        
+        Window window = new Window("Shape Drawer", 800, 600);
+        Shape shape = new Shape(name, param);
+
+        while (!window.CloseRequested)
         {
-            Window window = new Window("Shape Drawer", 800, 600);
-            
-            // 初始化Shape对象：假设学号末两位为"99"，首字母为"Z"
-            Shape myShape = new Shape(142, "XiKai");  // 参数为1XX（199）
+            SplashKit.ProcessEvents();
+            SplashKit.ClearScreen(Color.Black);
+            shape.Draw();
 
-            do
+            if (SplashKit.MouseClicked(MouseButton.LeftButton))
             {
-                SplashKit.ProcessEvents();
-                SplashKit.ClearScreen();
-
-                // 绘制形状
-
-                // 处理鼠标左键点击事件
-                if (SplashKit.MouseClicked(MouseButton.LeftButton))
+                Point2D mousePos = SplashKit.MousePosition();
+                if (shape.IsAt(mousePos))
                 {
-                    myShape.X = SplashKit.MouseX();
-                    myShape.Y = SplashKit.MouseY();
+                    shape.X = (float)mousePos.X - shape.Width / 2;
+                    shape.Y = (float)mousePos.Y - shape.Height / 2;
                 }
+            }
 
-                // 处理空格键事件
-                if (SplashKit.KeyTyped(KeyCode.SpaceKey))
-                {
-                    Point2D mousePos = SplashKit.MousePosition();
-                    if (myShape.IsAt(mousePos))
-                    {
-                        myShape.Color = SplashKit.RandomColor();
-                    }
-                }
-                 myShape.Draw();
+            if (SplashKit.KeyTyped(KeyCode.SpaceKey))
+            {
+                shape.Color = SplashKit.RandomRGBColor(255);
+            }
 
-                SplashKit.RefreshScreen();
-            } while (!window.CloseRequested);
+            SplashKit.RefreshScreen(60);
         }
     }
+}
+
 }
