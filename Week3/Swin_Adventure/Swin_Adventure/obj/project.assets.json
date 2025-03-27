@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aufb\\Desktop\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj",
+      "projectUniqueName": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj",
       "projectName": "Swin_Adventure",
-      "projectPath": "C:\\Users\\aufb\\Desktop\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj",
+      "projectPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj",
       "packagesPath": "C:\\Users\\aufb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aufb\\Desktop\\Swin_Adventure\\Swin_Adventure\\obj\\",
+      "outputPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aufb\\AppData\\Roaming\\NuGet\\NuGet.Config",

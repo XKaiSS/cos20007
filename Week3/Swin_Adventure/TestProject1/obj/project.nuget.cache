@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UdpvCETgybY=",
+  "dgSpecHash": "rF6IbnHQvCU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aufb\\Desktop\\Swin_Adventure\\TestProject1\\TestProject1.csproj",
+  "projectFilePath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aufb\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\aufb\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
