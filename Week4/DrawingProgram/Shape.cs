@@ -42,5 +42,11 @@ public class Shape
          return (pt.X >= _x && pt.X <= _x + _width) &&
                    (pt.Y >= _y && pt.Y <= _y + _height);
 }
+     public bool IsNear(Point2D pt)
+{
+    double distance = Math.Sqrt(Math.Pow(pt.X - this.X, 2) + Math.Pow(pt.Y - this.Y, 2));
+    return distance <= 50;
+}
+
 }
 }

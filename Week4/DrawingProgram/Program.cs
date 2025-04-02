@@ -4,41 +4,40 @@ using SplashKitSDK;
 
 namespace ShapeDrawer
 {
-   public class Program
-{
-    public static void Main()
+    public class Program
     {
-
-        string name = "XiKai"; // first name
-        int param = 123; // 1XX, XX is my last two digitals of student id
-        
-        Window window = new Window("Shape Drawer", 800, 600);
-        Shape shape = new Shape(name, param);
-
-        while (!window.CloseRequested)
+        public static void Main()
         {
-            SplashKit.ProcessEvents();
-            SplashKit.ClearScreen(Color.Black);
-            shape.Draw();
 
-            if (SplashKit.MouseClicked(MouseButton.LeftButton))
+            string name = "XiKai"; // first name
+            int param = 142; // 1XX, XX is my last two digitals of student id
+
+            Window window = new Window("Shape Drawer", 800, 600);
+            Shape myShape = new Shape(name, param);
+
+            do
             {
-                Point2D mousePos = SplashKit.MousePosition();
-                if (shape.IsAt(mousePos))
+                SplashKit.ProcessEvents();
+                SplashKit.ClearScreen(Color.White); //clear screen
+
+                // If the left mouse button is clicked, and mouse position is in the shape,update the shape position
+                if (SplashKit.MouseClicked(MouseButton.LeftButton)&& myShape.IsAt(SplashKit.MousePosition()))
                 {
-                    shape.X = (float)mousePos.X - shape.Width / 2;
-                    shape.Y = (float)mousePos.Y - shape.Height / 2;
+                    myShape.X = SplashKit.MouseX() - myShape.Width / 2;
+                    myShape.Y = SplashKit.MouseY() - myShape.Height / 2;
                 }
-            }
 
-            if (SplashKit.KeyTyped(KeyCode.SpaceKey))
-            {
-                shape.Color = SplashKit.RandomRGBColor(255);
-            }
+                // If the spacebar is pressed and the mouse is inside the shape, change color
+                if (SplashKit.KeyTyped(KeyCode.SpaceKey) && myShape.IsNear(SplashKit.MousePosition()))
+                {
+                    myShape.Color = SplashKit.RandomRGBColor(255);
+                }
 
-            SplashKit.RefreshScreen(60);
+                myShape.Draw();
+                SplashKit.RefreshScreen(60);
+
+            } while (!window.CloseRequested);
         }
     }
 }
 
-}
