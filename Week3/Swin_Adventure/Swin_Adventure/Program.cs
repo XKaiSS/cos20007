@@ -20,4 +20,19 @@ class Program
 
 
     }
+
+    
+}
+
+class Teacher{
+
+    string Name;
+    int age;
+
+ public Teacher(string name, int age){
+    Name = name;
+     Age = age;
+}
+
+   
 }
