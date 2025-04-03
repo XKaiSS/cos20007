@@ -5,7 +5,7 @@ namespace Swin_Adventure
     public class IdentifiableObject
     {
         
-        protected List<string> _identifiers;
+       protected List<string> _identifiers;
 
         public IdentifiableObject(string[] idents)
         {

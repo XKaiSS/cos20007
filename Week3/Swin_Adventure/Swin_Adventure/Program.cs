@@ -16,15 +16,20 @@ class Program
         Inventory bag = new Inventory();
         bag.Put(weapon);
         bag.Put(sword);
-        bag.RemoveItem(weapon);
-        System.Console.WriteLine(bag.ItemList);
+        System.Console.WriteLine(bag.HasItem("knife"));
 
-        GameObject test = new GameObject(weaponId, "test", "123");
+        weapon.PrivilegeEscalation("5442");
 
-        test.AllId();
+
+        System.Console.WriteLine(weapon.FirstId);
+        System.Console.WriteLine(weapon.ShortDescription);
+
+
+
+
 
     }
 
-    
+
 }
 

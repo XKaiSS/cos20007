@@ -997,11 +997,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aufb\\Desktop\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
+      "projectUniqueName": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
       "projectName": "TestProject2",
-      "projectPath": "C:\\Users\\aufb\\Desktop\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
+      "projectPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
       "packagesPath": "C:\\Users\\aufb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aufb\\Desktop\\Swin_Adventure\\TestProject2\\obj\\",
+      "outputPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aufb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1019,8 +1019,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\aufb\\Desktop\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj": {
-              "projectPath": "C:\\Users\\aufb\\Desktop\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj"
+            "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj": {
+              "projectPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj"
             }
           }
         }

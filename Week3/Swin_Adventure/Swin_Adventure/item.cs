@@ -1,43 +1,24 @@
-namespace Swin_Adventure{
-    public class Item
+namespace Swin_Adventure
+{
+    public class Item : GameObject
     {
-        private IdentifiableObject _identifiable; 
-        private string _name;
-        private string _description;
+
+        private string _studentPin = "5442";
         public Item(string[] idents, string name, string description)
+        : base(idents, name, description)
         {
-            _identifiable = new IdentifiableObject(idents);
-            _name = name;
-            _description = description;
         }
 
-        public string Name
-        {
-            get { return _name; }
-        }
 
-        public string ShortDescription
+        public void PrivilegeEscalation(string pin)
         {
-            get { return $"a {_name} ({_identifiable.FirstId})"; }
-        }
-
-        public string LongDescription
-        {
-            get { return _description; }
-        }
-        public bool AreYou(string id)
-        {
-            return  _identifiable.AreYou(id);
-        }
-
-        public void AddIdentifier(string id)
-        {
-            _identifiable.AddIdentifier(id);
-        }
-
-        public string FirstId(){
-            return _identifiable.FirstId;
+            if (pin == _studentPin && _identifiers.Count > 0)
+            {
+                _identifiers[0] = "cos20007"; // 直接修改继承的_identifiers
+            }
         }
     }
+
+
 
 }

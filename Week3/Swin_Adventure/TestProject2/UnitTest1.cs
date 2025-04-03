@@ -7,7 +7,7 @@ public class Tests
     [SetUp]
     public void Setup()
     {
-        magicalWeapon = new Item(new string[]{"multifunctional weapon", "sward", "gun"}, "magical weapon", "This Magical Weapon can quickly change its form to adapt to both melee and ranged combat.");
+        magicalWeapon = new Item(new string[] { "multifunctional weapon", "sward", "gun" }, "magical weapon", "This Magical Weapon can quickly change its form to adapt to both melee and ranged combat.");
     }
 
     [Test]
@@ -25,27 +25,37 @@ public class Tests
 
     [Test]
 
-    public void TestShortDescription(){
+    public void TestShortDescription()
+    {
 
         Assert.AreEqual("a magical weapon (multifunctional weapon)", magicalWeapon.ShortDescription);
 
     }
 
-     [Test]
+    [Test]
 
-    public void TestLongDescription(){
+    public void TestLongDescription()
+    {
 
-         Assert.AreEqual("This Magical Weapon can quickly change its form to adapt to both melee and ranged combat.", magicalWeapon.LongDescription);
+        Assert.AreEqual("This Magical Weapon can quickly change its form to adapt to both melee and ranged combat.", magicalWeapon.FullDescription);
 
     }
 
     [Test]
 
     public void TestAddIdentifier()
-        {
-            magicalWeapon.AddIdentifier("light shield");
-            Assert.IsTrue(magicalWeapon.AreYou("light shield"));
-        }
+    {
+        magicalWeapon.AddIdentifier("light shield");
+        Assert.IsTrue(magicalWeapon.AreYou("light shield"));
+    }
+    [Test]
+
+    public void TestPrivilegeEscalation()
+    {
+        magicalWeapon.PrivilegeEscalation("5442");
+        Assert.AreEqual("cos20007", magicalWeapon.FirstId);
+
+    }
 
 
 
