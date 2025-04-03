@@ -19,23 +19,12 @@ class Program
         bag.RemoveItem(weapon);
         System.Console.WriteLine(bag.ItemList);
 
+        GameObject test = new GameObject(weaponId, "test", "123");
 
-
+        test.AllId();
 
     }
 
     
 }
 
-class Teacher{
-
-    string Name;
-    int age;
-
- public Teacher(string name, int age){
-    Name = name;
-     Age = age;
-}
-
-   
-}
