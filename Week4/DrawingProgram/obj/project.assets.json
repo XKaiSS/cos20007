@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aufb\\Desktop\\COS20007\\Week4\\DrawingProgram\\Testproject.csproj",
+      "projectUniqueName": "c:\\Users\\aufb\\Desktop\\COS20007\\Week4\\DrawingProgram\\Testproject.csproj",
       "projectName": "Testproject",
-      "projectPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week4\\DrawingProgram\\Testproject.csproj",
+      "projectPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week4\\DrawingProgram\\Testproject.csproj",
       "packagesPath": "C:\\Users\\aufb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week4\\DrawingProgram\\obj\\",
+      "outputPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week4\\DrawingProgram\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aufb\\AppData\\Roaming\\NuGet\\NuGet.Config",

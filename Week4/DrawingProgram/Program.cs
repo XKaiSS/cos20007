@@ -4,41 +4,68 @@ using SplashKitSDK;
 
 namespace ShapeDrawer
 {
-   public class Program
-{
-    public static void Main()
+    public class Program
     {
-
-        string name = "XiKai"; // first name
-        int param = 123; // 1XX, XX is my last two digitals of student id
-        
-        Window window = new Window("Shape Drawer", 800, 600);
-        Shape shape = new Shape(name, param);
-
-        while (!window.CloseRequested)
+        public static void Main()
         {
-            SplashKit.ProcessEvents();
-            SplashKit.ClearScreen(Color.Black);
-            shape.Draw();
 
-            if (SplashKit.MouseClicked(MouseButton.LeftButton))
+            string name = "XiKai"; // first name
+            int param = 142; // 1XX, XX is my last two digitals of student id
+
+            Window window = new Window("Shape Drawer", 800, 600);
+            Drawing myDrawing = new Drawing();
+
+            do
             {
-                Point2D mousePos = SplashKit.MousePosition();
-                if (shape.IsAt(mousePos))
+                SplashKit.ProcessEvents();
+                //SplashKit.ClearScreen(Color.White); //clear screen
+
+                // If the left mouse button is clicked, and mouse position is in the shape,update the shape position
+                if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
-                    shape.X = (float)mousePos.X - shape.Width / 2;
-                    shape.Y = (float)mousePos.Y - shape.Height / 2;
+                    Point2D mousePos = SplashKit.MousePosition();
+                    Shape newShape = new Shape("XiKai", 123) // 创建新形状
+                    {
+                        X = (float)mousePos.X,
+                        Y = (float)mousePos.Y
+                    };
+                    myDrawing.AddShape(newShape);
                 }
-            }
+                
+                if (SplashKit.MouseClicked(MouseButton.RightButton))
+                {
+                    myDrawing.SelectShapesAt(SplashKit.MousePosition());
+                }
+                
+                
 
-            if (SplashKit.KeyTyped(KeyCode.SpaceKey))
-            {
-                shape.Color = SplashKit.RandomRGBColor(255);
-            }
+                // If the spacebar is pressed and the mouse is inside the shape, change color
+                if (SplashKit.KeyTyped(KeyCode.SpaceKey))
+                {
+                    myDrawing.Background = SplashKit.RandomRGBColor(255);
+                }
+                if (SplashKit.KeyTyped(KeyCode.SpaceKey))
+                {
+                    Point2D mousePos = SplashKit.MousePosition();
+                    Shape hoveredShape = myDrawing.FindHoveredShape(mousePos);
+                    
+                    hoveredShape.Color = SplashKit.RandomRGBColor(255);
+                    myDrawing.Background = SplashKit.RandomRGBColor(255);
+                }
 
-            SplashKit.RefreshScreen(60);
+
+                if (SplashKit.KeyTyped(KeyCode.DeleteKey) || SplashKit.KeyTyped(KeyCode.BackspaceKey))
+                {
+                    List<Shape> selected = myDrawing.SelectedShapes;
+                    foreach (Shape s in selected)
+                        myDrawing.RemoveShape(s);
+                }
+
+                myDrawing.Draw();
+                SplashKit.RefreshScreen(60);
+
+            } while (!window.CloseRequested);
         }
     }
 }
 
-}

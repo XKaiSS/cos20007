@@ -1,8 +1,9 @@
-namespace Swin_Adventure{
+namespace Swin_Adventure
+{
     public class Inventory
     {
         private List<Item> _items;
-        
+
         public Inventory()
         {
             _items = new List<Item>();
@@ -45,6 +46,10 @@ namespace Swin_Adventure{
                 }
             }
             return null;
+        }
+        public void RemoveItem(Item item)
+        {
+            _items.Remove(item);
         }
 
         public string ItemList

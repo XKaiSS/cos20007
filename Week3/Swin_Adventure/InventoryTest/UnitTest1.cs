@@ -52,4 +52,10 @@ public class Tests
         string expectedList = "\ta Sword (sword)\n\ta Shield (shield)";
         Assert.AreEqual(expectedList, _inventory.ItemList);
     }
+
+    [Test] 
+    public void TestRemoveItem(){
+        _inventory.RemoveItem(_sword);
+        Assert.IsFalse(_inventory.HasItem("_sword"));
+    }
 }
