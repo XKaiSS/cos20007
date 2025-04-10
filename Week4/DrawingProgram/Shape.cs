@@ -47,8 +47,8 @@ namespace ShapeDrawer
 
         public void DrawOutline()
         {
-            int lastDigit = 5; // 假设你的学号最后一位是5（按需修改！）
-            int padding = 5 + lastDigit; // 外框比形状大 5+X 像素
+            int lastDigit = 2; // 假设你的学号最后一位是5（按需修改！）
+            int padding = 2 + lastDigit; // 外框比形状大 5+X 像素
 
             // 绘制黑色边框矩形
             SplashKit.DrawRectangle(Color.Black, _x - padding, _y - padding, _width + 2 * padding, _height + 2 * padding);

@@ -9,12 +9,12 @@ namespace ShapeDrawer
     public class Drawing
     {
 
-        // 字段
+        // Field
         public readonly List<Shape> _shapes;
         private Color _background;
 
 
-        //构造函数 Constructor
+        // Constructor
         public Drawing()
         {
             _shapes = new List<Shape>();
@@ -65,6 +65,21 @@ namespace ShapeDrawer
             _shapes.Remove(s);
         }
 
+        //lab task
+        public void DeleteShapes(List<Shape> toDelete)
+        {
+            // Calculate the remaining quantity after deletion
+            int remaining = _shapes.Count - toDelete.Count;
+            if (remaining >= 3)
+            {
+                // then can delete
+                foreach (var shape in toDelete)
+                    _shapes.Remove(shape);
+            }
+        }
+
+
+
         public void Draw()
         {
             SplashKit.ClearScreen(_background); // 清屏并填充背景色
@@ -72,17 +87,6 @@ namespace ShapeDrawer
                 s.Draw(); // 让每个形状自己绘制
         }
 
-        public Shape FindHoveredShape(Point2D mousePos)
-        {
-            foreach (Shape shape in _shapes) // 内部遍历 _shapes
-            {
-                if (shape.IsAt(mousePos))
-                    return shape;
-            }
-            return null;
-
-             // 没有悬停的图形
-        }
 
         public void SelectShapesAt(Point2D pt)
         {

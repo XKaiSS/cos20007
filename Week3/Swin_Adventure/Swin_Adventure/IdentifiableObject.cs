@@ -15,6 +15,10 @@ namespace Swin_Adventure
                 _identifiers.Add(id.ToLower());
             }
         }
+        public List<string> Identifiers
+        {
+            get { return _identifiers; }
+        }
 
         public bool AreYou(string id)
         {

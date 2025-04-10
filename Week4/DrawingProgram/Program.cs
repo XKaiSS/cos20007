@@ -18,9 +18,7 @@ namespace ShapeDrawer
             do
             {
                 SplashKit.ProcessEvents();
-                //SplashKit.ClearScreen(Color.White); //clear screen
-
-                // If the left mouse button is clicked, and mouse position is in the shape,update the shape position
+                
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
                     Point2D mousePos = SplashKit.MousePosition();
@@ -39,17 +37,13 @@ namespace ShapeDrawer
                 
                 
 
-                // If the spacebar is pressed and the mouse is inside the shape, change color
                 if (SplashKit.KeyTyped(KeyCode.SpaceKey))
                 {
                     myDrawing.Background = SplashKit.RandomRGBColor(255);
                 }
                 if (SplashKit.KeyTyped(KeyCode.SpaceKey))
                 {
-                    Point2D mousePos = SplashKit.MousePosition();
-                    Shape hoveredShape = myDrawing.FindHoveredShape(mousePos);
                     
-                    hoveredShape.Color = SplashKit.RandomRGBColor(255);
                     myDrawing.Background = SplashKit.RandomRGBColor(255);
                 }
 
@@ -57,8 +51,7 @@ namespace ShapeDrawer
                 if (SplashKit.KeyTyped(KeyCode.DeleteKey) || SplashKit.KeyTyped(KeyCode.BackspaceKey))
                 {
                     List<Shape> selected = myDrawing.SelectedShapes;
-                    foreach (Shape s in selected)
-                        myDrawing.RemoveShape(s);
+                        myDrawing.DeleteShapes(selected);
                 }
 
                 myDrawing.Draw();

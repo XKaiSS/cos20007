@@ -12,17 +12,16 @@ class Program
         weaponId[1] = "knife";
         weaponId[2] = "spear";
         Item weapon = new Item(weaponId, "Multi-functional Weapon", "Pressing the button on the weapon changes its form.");
+        Item weapon2 = new Item(weaponId, "Multi-functional Weapon", "Pressing the button on the weapon changes its form.");
+        Item weapon3 = new Item(weaponId, "Multi-functional Weapon", "Pressing the button on the weapon changes its form.");
         Item sword = new Item(new string[] { "sword" }, "Sword", "A sharp blade");
         Inventory bag = new Inventory();
         bag.Put(weapon);
-        bag.Put(sword);
-        System.Console.WriteLine(bag.HasItem("knife"));
+        bag.PutItemWithLimit(weapon2);
+        System.Console.WriteLine(bag.ItemList);
+        System.Console.WriteLine(weapon.Identifiers[0]);
 
-        weapon.PrivilegeEscalation("5442");
-
-
-        System.Console.WriteLine(weapon.FirstId);
-        System.Console.WriteLine(weapon.ShortDescription);
+    
 
 
 

@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject1\\TestProject1.csproj": {}
+    "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/TestProject1/TestProject1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj": {
+    "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/Swin_Adventure/Swin_Adventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj",
+        "projectUniqueName": "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/Swin_Adventure/Swin_Adventure.csproj",
         "projectName": "Swin_Adventure",
-        "projectPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj",
-        "packagesPath": "C:\\Users\\aufb\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\obj\\",
+        "projectPath": "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/Swin_Adventure/Swin_Adventure.csproj",
+        "packagesPath": "/Users/akai/.nuget/packages/",
+        "outputPath": "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/Swin_Adventure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aufb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/akai/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,37 +59,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject1\\TestProject1.csproj": {
+    "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/TestProject1/TestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject1\\TestProject1.csproj",
+        "projectUniqueName": "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/TestProject1/TestProject1.csproj",
         "projectName": "TestProject1",
-        "projectPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject1\\TestProject1.csproj",
-        "packagesPath": "C:\\Users\\aufb\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject1\\obj\\",
+        "projectPath": "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/TestProject1/TestProject1.csproj",
+        "packagesPath": "/Users/akai/.nuget/packages/",
+        "outputPath": "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/TestProject1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aufb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/akai/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj": {
-                "projectPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj"
+              "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/Swin_Adventure/Swin_Adventure.csproj": {
+                "projectPath": "/Users/akai/Desktop/cos20007/Week3/Swin_Adventure/Swin_Adventure/Swin_Adventure.csproj"
               }
             }
           }
@@ -150,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
