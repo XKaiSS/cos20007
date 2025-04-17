@@ -1,5 +1,7 @@
 using System;
 using SplashKitSDK;
+using System.IO;
+using MyGame;
 
 namespace ShapeDrawer
 {
@@ -11,7 +13,7 @@ namespace ShapeDrawer
 
         private bool _selected;
 
-      
+
 
         public Shape(Color color)
         {
@@ -21,9 +23,9 @@ namespace ShapeDrawer
             _selected = false;
         }
 
-          public Shape()
+        public Shape()
         {
-            
+
             _color = Color.Yellow;
             _x = 0.0f;
             _y = 0.0f;
@@ -65,8 +67,21 @@ namespace ShapeDrawer
         // //     // double distance = Math.Sqrt(Math.Pow(pt.X - this.X, 2) + Math.Pow(pt.Y - this.Y, 2));
         //     // return distance <= 50;
         // }
-
+        public virtual void SaveTo(StreamWriter writer)
+        {
+            writer.WriteColor(this.Color);
+            writer.WriteLine(this.X);
+            writer.WriteLine(this.Y);
+        }
         
+        public virtual void LoadFrom(StreamReader reader)
+        {
+            this.Color = reader.ReadColor();
+            this.X = reader.ReadSingle();
+            this.Y = reader.ReadSingle();
+        }
+
+
 
 
 

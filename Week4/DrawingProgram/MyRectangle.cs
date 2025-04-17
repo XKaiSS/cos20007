@@ -1,21 +1,22 @@
 using System;
 using SplashKitSDK;
+using MyGame;
 
 namespace ShapeDrawer
 {
     public class MyRectangle : Shape
     {
-        // 只有矩形需要的字段和属性
-        private int _width, _height;
-        public int Width { get => _width; set => _width = value; }
-        public int Height { get => _height; set => _height = value; }
+        // default constructor
+        private float _width, _height;
+        public float Width { get => _width; set => _width = value; }
+        public float Height { get => _height; set => _height = value; }
 
-        // 默认构造函数（可以使用 this 调用下一个构造函数，并设置默认颜色、大小、位置等）
-        public MyRectangle() : this(Color.Green, 0.0f, 0.0f, 100, 100)
+        // Default constructor 
+        public MyRectangle() : this(Color.Green, 0.0f, 0.0f, 300, 300)
         {
         }
 
-        // 带参数构造函数
+        // Constructor with parameters
         public MyRectangle(Color color, float x, float y, int width, int height)
             : base(color)
         {
@@ -36,16 +37,31 @@ namespace ShapeDrawer
 
         public override void DrawOutline()
         {
-            // 这里设定一个简单的轮廓绘制：以黑色绘制边框
+            // Draw the border in black
             int padding = 5; // 可调整的边框宽度
             SplashKit.DrawRectangle(Color.Black, X - padding, Y - padding, _width + 2 * padding, _height + 2 * padding);
         }
 
         public override bool IsAt(Point2D pt)
         {
-            // 检查点击点是否在矩形内
+            // Check if the click point is within the rectangle
             return pt.X >= X && pt.X <= X + _width &&
                    pt.Y >= Y && pt.Y <= Y + _height;
+        }
+
+         public override void SaveTo(StreamWriter writer)
+        {
+            writer.WriteLine("Rectangle");
+            base.SaveTo(writer);
+            writer.WriteLine(Width);
+            writer.WriteLine(Height);
+        }
+
+        public override void LoadFrom(StreamReader reader)
+        {
+            base.LoadFrom(reader);
+            this.Width  = reader.ReadSingle();
+            this.Height = reader.ReadSingle();
         }
     }
 }
