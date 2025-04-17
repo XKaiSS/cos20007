@@ -11,7 +11,7 @@ namespace ShapeDrawer
 
         private bool _selected;
 
-      
+
 
         public Shape(Color color)
         {
@@ -21,9 +21,9 @@ namespace ShapeDrawer
             _selected = false;
         }
 
-          public Shape()
+        public Shape()
         {
-            
+
             _color = Color.Yellow;
             _x = 0.0f;
             _y = 0.0f;
@@ -66,7 +66,7 @@ namespace ShapeDrawer
         //     // return distance <= 50;
         // }
 
-        
+
 
 
 
