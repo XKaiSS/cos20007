@@ -1,7 +1,6 @@
 namespace Swin_Adventure
 {
 
-
     public class IdentifiableObject
     {
         

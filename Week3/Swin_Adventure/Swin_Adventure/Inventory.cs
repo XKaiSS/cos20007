@@ -57,11 +57,13 @@ namespace Swin_Adventure
             get
             {
                 string list = "";
+                List<string> descriptionList = new List<string>();
                 foreach (var item in _items)
                 {
-                    list += "\t" + item.ShortDescription + "\n";
+                    descriptionList.Add(item.ShortDescription);
                 }
-                return list.TrimEnd();
+                list = string.Join(", ", descriptionList);
+                return list;
             }
         }
 

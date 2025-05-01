@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RMMGlbI2QdA=",
+  "dgSpecHash": "JJPgpjEcO4k=",
   "success": true,
-  "projectFilePath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
+  "projectFilePath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aufb\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\aufb\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",

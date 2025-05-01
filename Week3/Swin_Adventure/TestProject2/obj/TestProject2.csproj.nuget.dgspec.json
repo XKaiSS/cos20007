@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj": {}
+    "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj": {}
   },
   "projects": {
     "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj": {
@@ -66,14 +66,14 @@
         }
       }
     },
-    "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj": {
+    "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
+        "projectUniqueName": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
         "projectName": "TestProject2",
-        "projectPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
+        "projectPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\TestProject2.csproj",
         "packagesPath": "C:\\Users\\aufb\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\obj\\",
+        "outputPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\TestProject2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aufb\\AppData\\Roaming\\NuGet\\NuGet.Config",
