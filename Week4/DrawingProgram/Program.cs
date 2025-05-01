@@ -11,7 +11,8 @@ namespace ShapeDrawer
         {
             Rectangle,
             Circle,
-            Line
+            Line,
+            Triangle
         }
 
         public static void Main()
@@ -24,8 +25,6 @@ namespace ShapeDrawer
             // The shape type to be added currently, the default is Rectangle.
 
             ShapeKind kindToAdd = ShapeKind.Rectangle;
-
-
 
 
             do
@@ -74,6 +73,10 @@ namespace ShapeDrawer
                 {
                     kindToAdd = ShapeKind.Line;
                 }
+                else if (SplashKit.KeyTyped(KeyCode.TKey))
+                {
+                    kindToAdd = ShapeKind.Triangle;
+                }
 
 
 
@@ -109,6 +112,16 @@ namespace ShapeDrawer
                                 myDrawing.AddShape(newShape);
                             }
                             break;
+
+                        case ShapeKind.Triangle:
+                            newShape = new MyTriangle();
+                            // 设置三角形中心坐标为鼠标点击位置
+                            newShape.X = (float)mousePos.X;
+                            newShape.Y = (float)mousePos.Y;
+                            myDrawing.AddShape(newShape);
+
+                            break;
+
 
                     }
                     if (newShape != null)

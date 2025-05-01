@@ -148,6 +148,7 @@ namespace ShapeDrawer
                         case "Rectangle": s = new MyRectangle(); break;
                         case "Circle":    s = new MyCircle();    break;
                         case "Line":      s = new MyLine();      break;
+                        case "Triangle":  s = new MyTriangle(); break;
                         default:
                             throw new InvalidDataException("Error at shape: " + kind);
                     }
