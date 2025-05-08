@@ -12,6 +12,17 @@ class Program
         player.Inventory.Put(sword);
         player.Inventory.Put(shield);
 
+        if (player.Locate("sword") != null)
+        {
+            System.Console.WriteLine("The object sword exists");
+            System.Console.WriteLine(player.Inventory.HasItem("sword"));
+        }
+        else
+        {
+            System.Console.WriteLine("The object does not exist");
+        }
+
+
         StreamWriter streamWriter = new StreamWriter("TestPlayer.txt");
         try
         {
@@ -27,7 +38,7 @@ class Program
         {
             streamWriter.Close();
         }
-
+        
         StreamReader streamReader = new StreamReader("TestPlayer.txt");
         try
         {
@@ -43,6 +54,8 @@ class Program
         {
             streamReader.Close();
         }
+
+
     }
 }
 

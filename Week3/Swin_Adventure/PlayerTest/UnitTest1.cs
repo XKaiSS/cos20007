@@ -10,19 +10,13 @@ public class Tests
     private Item _shield;
     private Player _player;
 
-
-    public Item Sword{
-        get{ return _sword; }
-        set{ _sword = value; }
-    }
-
     [SetUp]
     public void Setup()
     {
-        _player = new Player("James", "an explorer");
-        Sword = new Item(new string[] { "sword" }, "A sword", "A sharp sword");
+        _player = new Player("XiKai", "A killer!");
+        _sword = new Item(new string[] { "sword" }, "A sword", "A sharp sword");
         _shield = new Item(new string[] { "shield" }, "A shield", "A strong shield");
-        _player.Inventory.Put(Sword);
+        _player.Inventory.Put(_sword);
         _player.Inventory.Put(_shield);
 
     }
@@ -62,8 +56,8 @@ public class Tests
 
     public void TestPlayerFullDescription(){
         string FullDescription = _player.FullDescription;
-        Assert.That( FullDescription.Contains("James"), Is.True);
-        Assert.That( FullDescription.Contains("an explorer"), Is.True);
+        Assert.That( FullDescription.Contains("XiKai"), Is.True);
+        Assert.That( FullDescription.Contains("A killer"), Is.True);
         Assert.That( FullDescription.Contains(_sword.ShortDescription), Is.True);
         Assert.That( FullDescription.Contains(_shield.ShortDescription), Is.True);
         Assert.That( FullDescription.Contains("You are carring:"), Is.True);   
