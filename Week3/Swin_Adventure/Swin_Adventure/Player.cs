@@ -1,7 +1,7 @@
 
 namespace Swin_Adventure
 {
-    public class Player : GameObject
+    public class Player : GameObject, IHaveInventory
     {
         private Inventory _inventory;
         public Inventory Inventory

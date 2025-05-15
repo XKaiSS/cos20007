@@ -3,6 +3,9 @@ namespace Swin_Adventure
     public class Inventory
     {
         private List<Item> _items;
+        public List<Item> Items{
+            get { return _items; }
+        }
 
         public Inventory()
         {

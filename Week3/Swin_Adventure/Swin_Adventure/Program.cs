@@ -6,56 +6,27 @@ class Program
 {
     static void Main(string[] args)
     {
-        Player player = new Player("Xikai", "A killer!");
-        Item sword = new Item(new string[] { "sword", "weapon" }, "A sword", "A sharp sword");
-        Item shield = new Item(new string[] { "shield", "defence" }, "A shield", "A strong shield");
-        player.Inventory.Put(sword);
-        player.Inventory.Put(shield);
+        List<IHaveInventory> haveInventories= new List<IHaveInventory>();
+        Bag bag= new Bag(new string[]{"Bag"}, "Bag", "A big bag");
+        Player player= new Player( "Player", "A bad Player");
+        haveInventories.Add(bag);
+        haveInventories.Add(player);
+        foreach (var item in haveInventories)
+        {
+            System.Console.WriteLine(item.Name);
+            var locatedItem= item.Locate("bag");
+            if (locatedItem!=null){
+                System.Console.WriteLine("Located: {0}",locatedItem.Name);
+            }
+            else{
+                System.Console.WriteLine("Not found");
+            }
+            
+        }
 
-        if (player.Locate("sword") != null)
-        {
-            System.Console.WriteLine("The object sword exists");
-            System.Console.WriteLine(player.Inventory.HasItem("sword"));
-        }
-        else
-        {
-            System.Console.WriteLine("The object does not exist");
-        }
-
-
-        StreamWriter streamWriter = new StreamWriter("TestPlayer.txt");
-        try
-        {
-            player.SaveTo(streamWriter);
-
-        }
-        catch (System.Exception)
-        {
-
-            throw;
-        }
-        finally
-        {
-            streamWriter.Close();
-        }
-        
-        StreamReader streamReader = new StreamReader("TestPlayer.txt");
-        try
-        {
-            player.LoadFrom(streamReader);
-
-        }
-        catch (System.Exception)
-        {
-
-            throw;
-        }
-        finally
-        {
-            streamReader.Close();
-        }
 
 
     }
+
 }
 
