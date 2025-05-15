@@ -38,7 +38,7 @@ namespace Swin_Adventure
             }
             return null;
         }
-
+        
         public Item Fetch(string id)
         {
             foreach (var item in _items)

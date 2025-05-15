@@ -4,29 +4,40 @@ using Swin_Adventure;
 
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        List<IHaveInventory> haveInventories= new List<IHaveInventory>();
-        Bag bag= new Bag(new string[]{"Bag"}, "Bag", "A big bag");
-        Player player= new Player( "Player", "A bad Player");
-        haveInventories.Add(bag);
-        haveInventories.Add(player);
-        foreach (var item in haveInventories)
+        System.Console.WriteLine("please enter your name");
+        string playerName = Console.ReadLine();
+         System.Console.WriteLine("please enter your descroption");
+        string playerdescription = Console.ReadLine();
+        Player player = new Player(playerName, playerdescription);
+        Item sword = new Item(new string[] { "sword" }, "a rusty sword", "A sharp rusty sword");
+        Item potion = new Item(new string[] { "potion" }, "a healing potion", "A small red healing potion");
+        player.Inventory.Put(sword);
+        player.Inventory.Put(potion);
+        Bag bag = new Bag(new string[] { "bag","bigbag" }, "a leather bag", "A worn-out leather bag");
+        player.Inventory.Put(bag);
+        Item gem = new Item(new string[] { "gem" }, "a shiny gem", "A sparkling shiny gem");
+        bag.Inventory.Put(gem);
+        LookCommand lookCommand = new LookCommand(new string[] { "" });
+        bool finished = false;
+
+        while (!finished)
         {
-            System.Console.WriteLine(item.Name);
-            var locatedItem= item.Locate("bag");
-            if (locatedItem!=null){
-                System.Console.WriteLine("Located: {0}",locatedItem.Name);
+            Console.WriteLine("Enter a command");
+            string command = Console.ReadLine();
+
+            if (command.ToLower() == "exit")
+            {
+                finished = true;
+                break;
             }
-            else{
-                System.Console.WriteLine("Not found");
-            }
-            
+
+            string[] split = command.Split(" ");
+
+            Console.WriteLine(lookCommand.Execute(player, split));
         }
 
-
-
     }
-
 }
 
