@@ -3,7 +3,6 @@ namespace InventoryTest;
 using NUnit.Framework;
 public class Tests
 {
-
     private Inventory _inventory;
     private Item _sword;
     private Item _shield;
@@ -70,11 +69,8 @@ public class Tests
     [Test]
     public void TestPutItemWithLimit()
     {
-      
-        Assert.IsTrue( _inventory.PutItemWithLimit(validItem));
-
-        Assert.IsFalse( _inventory.PutItemWithLimit(invalidItem));
-
-        Assert.IsFalse( _inventory.PutItemWithLimit(duplicateItem));
+        Assert.IsTrue(_inventory.PutItemWithLimit(validItem));
+        Assert.IsFalse(_inventory.PutItemWithLimit(invalidItem));
+        Assert.IsFalse(_inventory.PutItemWithLimit(duplicateItem));
     }
 }

@@ -1,14 +1,22 @@
-
 namespace Swin_Adventure
 {
     public class Player : GameObject, IHaveInventory
     {
         private Inventory _inventory;
+        private Location _location;
+
         public Inventory Inventory
         {
             get { return _inventory; }
             set { _inventory = value; }
         }
+
+        public Location Location
+        {
+            get { return _location; }
+            set { _location = value; }
+        }
+
         public Player(string name, string description)
         : base(new string[] { "me", "inventory" }, name, description)
         {
@@ -21,14 +29,21 @@ namespace Swin_Adventure
             {
                 return this;
             }
-            else
+            GameObject obj = Inventory.Fetch(id);
+            if (obj != null)
             {
-                return Inventory.Fetch(id);
+                return obj;
             }
+            if (_location != null)
+            {
+                return _location.Locate(id);
+            }
+            return null;
         }
+
         public override string FullDescription
         {
-            get { return $"You are {Name}, {base.FullDescription}\nYou are carring:\n" + _inventory.ItemList; }
+            get { return $"You are {Name}, {base.FullDescription}\nYou are carrying:\n" + _inventory.ItemList; }
         }
 
         public override void SaveTo(StreamWriter Writer)
@@ -36,6 +51,7 @@ namespace Swin_Adventure
             base.SaveTo(Writer);
             Writer.WriteLine(_inventory.ItemList);
         }
+
         public override void LoadFrom(StreamReader Reader)
         {
             base.LoadFrom(Reader);

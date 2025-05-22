@@ -3,11 +3,20 @@ namespace Swin_Adventure
 {
     public class LookCommand : Command
     {
-        public LookCommand(string[] ids) : base(ids)
+        public LookCommand() : base(new string[] { "look" })
         {
         }
         public override string Execute(Player p, string[] text)
         {
+            if (text.Length == 1 && text[0] == "look")
+            {
+                if (p.Location != null)
+                {
+                    return p.Location.FullDescription;
+                }
+                return "You are not in any location.";
+            }
+
             IHaveInventory container = p;
 
             if (text.Length == 3 || text.Length == 5)
@@ -20,7 +29,6 @@ namespace Swin_Adventure
                         {
                             if (text[3] == "in")
                             {
-                                //call the FetchContainer with the p and text[4] to update the container
                                 container = FetchContainer(p, text[4]);
                                 if (container == null)
                                 {
@@ -29,13 +37,11 @@ namespace Swin_Adventure
                             }
                             else return "What do you want to look in?";
                         }
-                        //call the LookAtIn with (text[2], container);
-                         return LookAtIn(text[2], container);
+                        return LookAtIn(text[2], container);
                     }
                     else return "What do you want to look at?";
                 }
                 else return "Error in look input";
-
             }
             return "I do not know how to look like that";
         }

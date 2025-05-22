@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LookCommandTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06e3b50e501a51f9fa190ba34fefc5c297b1c2ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b3bf40c96bf8b11f11a617b22847da2d48d8020")]
 [assembly: System.Reflection.AssemblyProductAttribute("LookCommandTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LookCommandTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

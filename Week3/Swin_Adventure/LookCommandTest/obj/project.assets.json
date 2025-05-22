@@ -826,11 +826,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\LookCommandTest\\LookCommandTest.csproj",
+      "projectUniqueName": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\LookCommandTest\\LookCommandTest.csproj",
       "projectName": "LookCommandTest",
-      "projectPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\LookCommandTest\\LookCommandTest.csproj",
+      "projectPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\LookCommandTest\\LookCommandTest.csproj",
       "packagesPath": "C:\\Users\\aufb\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\LookCommandTest\\obj\\",
+      "outputPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\LookCommandTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aufb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -848,8 +848,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj": {
-              "projectPath": "c:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj"
+            "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj": {
+              "projectPath": "C:\\Users\\aufb\\Desktop\\COS20007\\Week3\\Swin_Adventure\\Swin_Adventure\\Swin_Adventure.csproj"
             }
           }
         }

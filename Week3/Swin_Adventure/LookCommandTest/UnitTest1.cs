@@ -16,7 +16,7 @@ public class Tests
         gem = new Item(new string[] { "gem" }, "a shiny gem", "A sparkling red gem");
         pen = new Item(new string[] { "pen" }, "a black pen", "A simple black ink pen");
         bag = new Bag(new string[] { "bag" }, "a leather bag", "A medium-sized leather bag");
-        lookCommand = new LookCommand(new string[] { "" });
+        lookCommand = new LookCommand();
     }
 
     [Test]
